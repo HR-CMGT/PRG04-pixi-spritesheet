@@ -2,6 +2,8 @@
 
 Een spritesheet is een enkele afbeelding waarin alle frames van een animatie zitten.
 
+[DEMO](https://hr-cmgt.github.io/PRG04-pixi-spritesheet-completed/)
+
 ![sheet](./src/images/sheet-example.png)
 
 Om spritesheets in te lezen gebruik je een **JSON** file waarin staat welke _bronafbeelding_ je gebruikt en waar de _frames_ zich precies bevinden in die afbeelding.
