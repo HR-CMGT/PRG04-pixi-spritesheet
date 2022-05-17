@@ -117,6 +117,40 @@ Om de plugin te activeren maak je een `.parcelrc` bestand, daarin staat:
 <br>
 <br>
 
+## Meerdere animaties in 1 spritesheet
+
+Op basis van de spritesheet kan je meerdere arrays aanmaken waar de verschillende animaties inzitten. 
+
+### Game.ts
+```typescript
+createCatFrames() {
+    // create an array of textures from an image path
+    let idleAnimation: PIXI.Texture[] = []
+    let jumpAnimation: PIXI.Texture[] = []
+    for (let i = 1; i <= 10; i++) {
+        // magically works since the spritesheet was loaded with the pixi loader
+        idleAnimation.push(PIXI.Texture.from(`poes_${i}.png`))
+    }
+    for (let i = 11; i <= 30; i++) {
+        // magically works since the spritesheet was loaded with the pixi loader
+        jumpAnimation.push(PIXI.Texture.from(`poes_${i}.png`))
+    }
+}
+```
+
+### JumpCat.ts
+Alle array's (met alle animaties) geef je aan de kat. En de idleAnimation geef je aan de super(). Dit is dan de startanimatie.
+```typescript
+constructor(idleAnimation: PIXI.Texture[], jumpAnimation: PIXI.Texture[]) {
+  super(idleAnimation)
+```
+Na een bepaalde actie kan je dan de animatie wisselen door het volgende te doen in de kat.
+```typescript
+this.textures = jumpAnimation
+this.play()
+```
+
+
 ## Links
 
 - [ANIMATED DRAWINGS](https://sketch.metademolab.com/): Leuke tool om van een tekening een animatie te maken.
