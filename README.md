@@ -128,11 +128,11 @@ createCatFrames() {
     let idleAnimation: PIXI.Texture[] = []
     let jumpAnimation: PIXI.Texture[] = []
     for (let i = 1; i <= 10; i++) {
-        // magically works since the spritesheet was loaded with the pixi loader
+        // frame 1 tot en met 10 is de idle animation
         idleAnimation.push(PIXI.Texture.from(`poes_${i}.png`))
     }
     for (let i = 11; i <= 30; i++) {
-        // magically works since the spritesheet was loaded with the pixi loader
+        // frame 11 tot en met 30 is de jump animation
         jumpAnimation.push(PIXI.Texture.from(`poes_${i}.png`))
     }
 }
