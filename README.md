@@ -1,5 +1,7 @@
 # Spritesheet
 
+[Uitgewerkte code](https://github.com/HR-CMGT/PRG04-pixi-spritesheet-completed)
+
 Een spritesheet is een enkele afbeelding waarin alle frames van een animatie zitten.
 
 [DEMO](https://hr-cmgt.github.io/PRG04-pixi-spritesheet-completed/)
