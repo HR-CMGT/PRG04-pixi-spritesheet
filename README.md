@@ -138,16 +138,28 @@ createCatFrames() {
 }
 ```
 
+<br>
+<br>
+<br>
+
 ### JumpCat.ts
+
 Alle array's (met alle animaties) geef je aan de kat. En de idleAnimation geef je aan de super(). Dit is dan de startanimatie.
+
 ```typescript
 class JumpCat extends PIXI.AnimatedSprite {
   constructor(idleAnimation: PIXI.Texture[], jumpAnimation: PIXI.Texture[]) {
     super(idleAnimation)
   }
 }
+
+let myJumpingCat = new JumpCat(idleAnimation, jumpAnimation)
 ```
-Na een bepaalde actie kan je dan de animatie wisselen door het volgende te doen in de kat.
+
+
+
+Na een bepaalde actie kan je dan de animatie frames wisselen via `this.textures = ...`:
+
 ```typescript
 class JumpCat extends PIXI.AnimatedSprite {
 
@@ -169,7 +181,9 @@ class JumpCat extends PIXI.AnimatedSprite {
 }
 
 ```
-
+<br>
+<br>
+<br>
 
 ## Links
 
