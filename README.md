@@ -92,30 +92,7 @@ class Game {
 <br>
 <br>
 
-## 💀 Live server
 
-De pixi loader werkt niet samen met het `import` statement voor JSON files. Ook is het niet handig dat je live server steeds een andere bestandsnaam aan je spritesheet geeft. Om dit op te lossen gebruiken we een `static` map in het project. Deze map staat **_buiten_** de `src` map.
-
-![static](./src/images/sheet-static.png)
-
-Je kan deze statische bestanden telkens handmatig in je `docs` map zetten als je je game wil publiceren. Hier is echter ook een plugin voor:
-
-```bash
-npm install parcel-reporter-static-files-copy -D
-```
-
-Om de plugin te activeren maak je een `.parcelrc` bestand, daarin staat:
-
-```json
-{
-  "extends": ["@parcel/config-default"],
-  "reporters": ["...", "parcel-reporter-static-files-copy"]
-}
-```
-
-<br>
-<br>
-<br>
 
 ## Meerdere animaties in 1 spritesheet
 
@@ -181,9 +158,36 @@ class JumpCat extends PIXI.AnimatedSprite {
 }
 
 ```
+
 <br>
 <br>
 <br>
+
+## 💀 Live server
+
+De pixi loader werkt niet samen met het `import` statement voor JSON files. Ook is het niet handig dat je live server steeds een andere bestandsnaam aan je spritesheet geeft. Om dit op te lossen gebruiken we een `static` map in het project. Deze map staat **_buiten_** de `src` map.
+
+![static](./src/images/sheet-static.png)
+
+Je kan deze statische bestanden telkens handmatig in je `docs` map zetten als je je game wil publiceren. Hier is echter ook een plugin voor:
+
+```bash
+npm install parcel-reporter-static-files-copy -D
+```
+
+Om de plugin te activeren maak je een `.parcelrc` bestand, daarin staat:
+
+```json
+{
+  "extends": ["@parcel/config-default"],
+  "reporters": ["...", "parcel-reporter-static-files-copy"]
+}
+```
+
+<br>
+<br>
+<br>
+
 
 ## Links
 
