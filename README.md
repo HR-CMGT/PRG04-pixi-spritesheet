@@ -188,6 +188,14 @@ Om de plugin te activeren maak je een `.parcelrc` bestand, daarin staat:
 <br>
 <br>
 
+## Completed code
+
+https://github.com/HR-CMGT/PRG04-pixi-spritesheet-completed
+
+<br>
+<br>
+<br>
+
 
 ## Links
 
