@@ -38,6 +38,8 @@ Om spritesheets in te lezen gebruik je een **JSON** file waarin staat welke _bro
 
 Je kan de [Texture Packer](https://www.codeandweb.com/texturepacker) software gebruiken om van je [losse afbeeldingen](./src/images/cat_animation/) een spritesheet met JSON file te maken.
 
+Als je al een plaatje hebt waar alle sprites in één PNG file staan, maar je hebt geen JSON file, dan zal je deze eerst weer uit elkaar moeten halen. Anders kan Texture Packer de JSON file niet genereren. Je kan met [Photoshop Auto Slice](https://www.youtube.com/watch?v=6WzgRH6UV8g) snel een PNG onderverdelen in losse afbeeldingen.
+
 > _Spritesheets zijn niet alleen handig voor animaties. Je kan het ook gebruiken om alle afbeeldingen uit je game in één enkele PNG file op te slaan. Dit is meer efficiënt qua geheugen van je grafische kaart_.
 
 <br>
