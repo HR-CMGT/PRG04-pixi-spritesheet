@@ -1,4 +1,4 @@
-# Spritesheet
+# Spritesheet PRG04 2021 - 2022
 
 [Uitgewerkte code](https://github.com/HR-CMGT/PRG04-pixi-spritesheet-completed)
 
